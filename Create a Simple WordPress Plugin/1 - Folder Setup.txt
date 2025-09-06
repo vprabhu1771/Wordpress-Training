@@ -1,0 +1,8 @@
+Create Folder
+
+htdocs -> project_wordpress -> wp-content -> plugins -> my_first_plugin
+
+
+Create File
+
+htdocs -> project_wordpress -> wp-content -> plugins -> my_first_plugin -> my_first_plugin.php
