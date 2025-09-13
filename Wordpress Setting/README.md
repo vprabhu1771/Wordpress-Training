@@ -9,3 +9,9 @@ Login -> Settings -> General -> Site Title
 ```
 Login -> Settings -> General -> Tagline
 ```
+
+# 3 - Site Icon
+
+```
+Login -> Settings -> General -> Site Icon
+```
