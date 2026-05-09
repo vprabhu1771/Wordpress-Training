@@ -1,15 +1,41 @@
 `index.php`
 
 ```
+<?php get_header(); ?>
+
+<h1>Hello World</h1>
+
 <?php
-$result = new WP_Query(array('post_type' => 'sliders'));
-while($result->have_posts()){
-    $result->the_post();
+$result = new WP_Query(array(
+    'post_type' => 'sliders'
+));
 
-    echo get_the_title() . "<br>";
+if ($result->have_posts()) {
+    while ($result->have_posts()) {
+        $result->the_post();
+        ?>
+
+        <h2><?php the_title(); ?></h2>
+
+        <div>
+            <?php the_content(); ?>
+        </div>
+
+        <?php if (has_post_thumbnail()) { ?>
+            <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt="">
+        <?php } ?>
+
+        <hr>
+
+        <?php
+    }
+    wp_reset_postdata();
+} else {
+    echo "No sliders found.";
 }
-
 ?>
+
+<?php get_footer(); ?>
 ```
 
 `functions.php`
