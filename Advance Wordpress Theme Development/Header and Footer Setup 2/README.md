@@ -1,3 +1,7 @@
+```
+https://stackoverflow.com/questions/51584646/how-is-get-header-calling-a-specific-php-file
+```
+
 In modern WordPress theme development, if your header and footer files are inside the `parts` folder, you should load them like this:
 
 ```php
