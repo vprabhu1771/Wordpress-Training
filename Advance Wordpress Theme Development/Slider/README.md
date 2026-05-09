@@ -1,4 +1,20 @@
 `index.php`
+```
+<?php
+$result = new WP_Query(array('post_type' => 'sliders'));
+
+while($result->have_posts()){
+    $result->the_post();
+
+    echo get_the_title() . "<br>";
+    echo get_the_content() . "<br>";
+    echo get_the_post_thumbnail_url(get_the_ID()) . "<br>";
+}
+
+?>
+```
+
+`index.php`
 
 ```
 <?php get_header(); ?>
