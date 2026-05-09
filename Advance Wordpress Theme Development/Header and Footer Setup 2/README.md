@@ -4,6 +4,8 @@ https://stackoverflow.com/questions/51584646/how-is-get-header-calling-a-specifi
 
 In modern WordPress theme development, if your header and footer files are inside the `parts` folder, you should load them like this:
 
+`index.php`
+
 ```php
 <?php get_template_part('parts/header'); ?>
 
