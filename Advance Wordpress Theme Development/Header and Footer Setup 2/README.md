@@ -47,6 +47,27 @@ footer.php
 
 from the theme root folder.
 
+`header.php`
+```php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Header</h1>
+```
+
+`footer.php`
+```php
+    <h1>Footer</h1>
+</body>
+</html>
+```
+
 ---
 
 #### Custom Folder Method
@@ -98,3 +119,5 @@ your-theme/
 
 <?php get_template_part('parts/footer'); ?>
 ```
+
+![Image](1.png)
