@@ -1,6 +1,12 @@
 ```
 https://developer.wordpress.org/themes/
 ```
+
+#  WordPress 101: Create a Theme from Scratch 
+```
+https://www.youtube.com/watch?v=oTRZYnYQlmo
+```
+
 # WordPress WooCommerce Custom Theme Development
 ```
 https://www.youtube.com/playlist?list=PLHKO87MLJx2mabc8n9CR_Cb00juQrDfHM
