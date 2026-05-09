@@ -6,6 +6,11 @@ https://developer.wordpress.org/themes/
 https://www.youtube.com/playlist?list=PLHKO87MLJx2mabc8n9CR_Cb00juQrDfHM
 ```
 
+# Convert html template to wordpress theme
+```
+https://www.youtube.com/playlist?list=PLnXjDYNYOAaSQ5rdJ7GMA8ww3kUeFWlRL
+```
+
 ```
 <html lang="en">
 ```
