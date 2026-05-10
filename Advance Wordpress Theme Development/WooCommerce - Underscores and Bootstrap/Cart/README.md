@@ -24,5 +24,25 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 
 
 ```
-<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> – <?php echo WC()->cart->get_cart_total(); ?></a>
+<div class="container pt-2 pb-2">
+
+	<div class="row">
+
+		<div class="col site-header__logo">
+			<?php the_custom_logo(); ?>
+		</div>
+
+		<!-- Search -->
+		<div class="col-md-5">					
+			<?php aws_get_search_form( true ); ?>
+		</div>
+
+		<!-- Cart -->
+		<div class="col cart">
+			<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> – <?php echo WC()->cart->get_cart_total(); ?></a>
+		</div>
+
+	</div>
+
+</div>
 ```
