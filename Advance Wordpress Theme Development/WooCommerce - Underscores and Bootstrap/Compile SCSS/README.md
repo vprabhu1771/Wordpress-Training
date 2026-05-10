@@ -76,6 +76,8 @@ function custom_scripts() {
 add_action( 'wp_enqueue_scripts', 'custom_scripts' );
 ```
 
+# OR
+
 ```
 function custom_scripts() {
 	wp_enqueue_style( 'custom-style', get_stylesheet_uri(), array(), _S_VERSION );
