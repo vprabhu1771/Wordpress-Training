@@ -8,7 +8,7 @@ Click Watch
 ```
 
 
-`main.scss`
+`css\main.scss`
 
 ```scss
 // Custom.scss
