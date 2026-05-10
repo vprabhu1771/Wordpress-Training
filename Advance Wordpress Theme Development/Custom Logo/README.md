@@ -14,38 +14,35 @@ Appearance > Customize > Site Identity.
 
 ```
 <header id="masthead" class="site-header">
+	<div class="container pt-2 pb-2">
 
-    <div class="container pt-2 pb-2">
+		<div class="row align-items-center">
 
-        <div class="row align-items-center">
+			<div class="col site-header__logo d-flex justify-content-center justify-content-md-start pb-2">					
+				<?php 
+					if (has_custom_logo()) {
+						the_custom_logo();
+					} else {
+						echo "No logo set";
+					}
+				?>								
+			</div>
 
-            <div class="col site-header__logo">					
-                <?php 
-                    if (has_custom_logo()) {
-                        the_custom_logo();
-                    } else {
-                        echo "No logo set";
-                    }
-                ?>
-								
-            </div>
+			<!-- Search -->
+			<div class="col-sm-12 col-md-5">					
+				<?php aws_get_search_form( true ); ?>
+			</div>
 
-            <!-- Search -->
-            <div class="col-md-5">					
-                <?php aws_get_search_form( true ); ?>
-            </div>
+			<!-- Cart -->
+			<div class="col cart d-flex justify-content-center justify-content-md-end align-items-center pt-2">
+				<a href="<?php echo wc_get_cart_url(); ?>">
+					<i class="bi bi-bag-dash p-2"></i>
+				</a>
+				<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> – <?php echo WC()->cart->get_cart_total(); ?></a>
+			</div>
 
-            <!-- Cart -->
-            <div class="col cart d-flex justify-content-end align-items-center">
-                <a href="<?php echo wc_get_cart_url(); ?>">
-                    <i class="bi bi-bag-dash p-2"></i>
-                </a>
+		</div>
 
-                <a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> – <?php echo WC()->cart->get_cart_total(); ?></a>
-            </div>
-
-        </div>
-
-    </div>
+	</div>
 </header>
 ```
