@@ -1,0 +1,3 @@
+```
+Appearance > Customize > Site Identity.
+```
