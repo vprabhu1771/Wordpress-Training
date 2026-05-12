@@ -57,3 +57,17 @@ get_footer();
     }
 }
 ```
+
+```
+.popular-products {
+    .add_to_cart_button{
+        display: block !important;
+        text-align: center;
+    }
+
+    .attachment-woocommerce_thumbnail{
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}
+```
