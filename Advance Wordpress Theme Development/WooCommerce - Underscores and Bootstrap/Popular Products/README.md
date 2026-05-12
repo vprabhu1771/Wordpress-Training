@@ -46,3 +46,14 @@ get_footer();
 ```
 
 ![Image](1.PNG)
+
+
+`wp-content\themes\your_theme\css\main.scss`
+```
+.popular-products {
+    .add_to_cart_button{
+        display: block !important;
+        text-align: center;
+    }
+}
+```
