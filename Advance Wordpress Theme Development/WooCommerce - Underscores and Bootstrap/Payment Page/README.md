@@ -148,3 +148,5 @@ Add this Bootstrap 5 accordion CSS if needed:
 ```
 
 Make sure Bootstrap 5 JS is loaded in your theme because accordion uses `data-bs-toggle`.
+
+![Image](1.png)
