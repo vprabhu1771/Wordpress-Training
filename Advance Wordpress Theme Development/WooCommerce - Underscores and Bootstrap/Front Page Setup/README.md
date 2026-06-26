@@ -1,3 +1,7 @@
+```
+Login -> Settings -> Reading -> A static page (select below) -> Homepage -> Sample Page
+```
+
 
 `custom\front-page.php`
 
