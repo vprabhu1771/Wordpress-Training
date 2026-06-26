@@ -1,4 +1,6 @@
-front-page.php
+
+`custom\front-page.php`
+
 ```php
 <?php
 /**
