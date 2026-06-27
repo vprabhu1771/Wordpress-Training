@@ -1,6 +1,11 @@
 ```
 https://codex.wordpress.org/Navigation_Menus
 ```
+
+```
+Login -> Appearance -> Menus -> Menu structure -> Menu Settings
+```
+
 `functions.php`
 
 ```php
