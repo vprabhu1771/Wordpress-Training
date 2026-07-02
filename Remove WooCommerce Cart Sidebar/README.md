@@ -126,3 +126,5 @@ Please share:
 3. Your `sidebar.php`
 
 I can tell you the exact line to remove.
+
+![Image](1.PNG)
