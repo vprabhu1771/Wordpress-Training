@@ -1,3 +1,8 @@
+#  How to create a custom Registration Page Add custom fields to your Woocommerce Registration page 
+```
+https://www.youtube.com/watch?v=cxry_qwHB10
+```
+
 There are three common ways to add custom fields to the **WooCommerce registration page**.
 
 ## Method 1: Add fields using code (Recommended)
